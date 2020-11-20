@@ -82,7 +82,11 @@ file_type_by_extension = {
 }
 
 def get_desktop_path():
-    return subprocess.check_output(['/usr/bin/xdg-user-dir', 'DESKTOP']).decode("utf-8")[:-1]
+    try:
+        desktop = subprocess.check_output(['/usr/bin/xdg-user-dir', 'DESKTOP']).decode("utf-8")[:-1]
+    except:
+        desktop = os.path.expanduser("~/Desktop")
+    return desktop
 
 def get_file_type(file, types):  # types = file_type_by_extension
     for type, extension in types.items():
