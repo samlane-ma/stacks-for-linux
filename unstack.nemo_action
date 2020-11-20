@@ -1,0 +1,19 @@
+[Nemo Action]
+
+Name=UnStack Desktop
+
+Comment=UnStack the Icons on the Desktop
+
+Exec=<stacks.py --unstack>
+
+Icon-Name=folder
+
+Selection=none
+
+Extensions=any;
+
+#Conditions=desktop;
+
+EscapeSpaces=true
+
+Terminal=false

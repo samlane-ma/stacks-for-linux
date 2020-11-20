@@ -1,0 +1,19 @@
+[Nemo Action]
+
+Name=Stack Desktop
+
+Comment=Stack the Icons on the Desktop
+
+Exec=<stacks.py --stack>
+
+Icon-Name=folder
+
+Selection=none
+
+Extensions=any;
+
+#Conditions=desktop;
+
+EscapeSpaces=true
+
+Terminal=false
